@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <div id="game" class="container">
+    <div class="row">
+      <nav class="instructions">
+        <div class="nav-wrapper">
+          <span id="currentAction" class="brand-logo center">CHOOSE YOUR FIGHTER</span>
+        </div>
+      </nav>
+    </div>
+    <div class="row" id="characters"></div>
+    <div class="row gamePlay">
+      <nav class="playable">
+        <div class="nav-wrapper">
+          <a class="brand-logo center btn-floating btn-large waves-effect waves-light red attackButton"><i id="attack" class="material-icons">sports_kabaddi</i></a>
+          <ul id="fighterName" class="left chosenNames">
+          </ul>
+          <ul id="opponentName" class="right chosenNames">
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+    </div>
+  </div>
+  <script src="./confetti.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./app.min.js"></script>
+</body>
+
+</html>
